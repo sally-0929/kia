@@ -1,0 +1,493 @@
+
+/* #myCarousel, .carousel-inner{
+            height: 900px;
+}     */
+
+
+*{  
+    margin: 0;
+    padding: 0;
+}
+ul{list-style:none;}
+
+.navbar {
+    position: absolute;
+    padding-top: 25px;
+    background-color: transparent;
+    border: 0;
+    font-size: 18px !important;
+}
+.navbar>div>ul{
+    position: absolute;
+    right: 40px;
+    top: 26px;
+}
+
+.navbar a img{
+    position: absolute;
+    width: 120px;
+    left: 50%;
+    top: 20px;
+}
+
+/* Add a gray color to all navbar links */
+.navbar li a, .navbar .navbar-brand {
+color: #fff !important;
+}
+
+/* The active link */
+.navbar-nav li.active a {
+color: #fff !important;
+background-color:#29292c !important;
+}
+
+/* Remove border color from the collapsible button */
+.navbar-default .navbar-toggle {
+border-color: transparent;
+}
+
+.navbar-header>img{
+    display: none;
+}
+.navbar .navicon{display: none;}
+
+/* Dropdown */
+.open .dropdown-toggle {
+color: #fff ;
+background-color: transparent!important;
+}
+
+/* Dropdown links */
+.dropdown-menu li a {
+color:gray!important;
+text-align: center;
+font-size: 20px;
+}
+
+/* On hover, the dropdown links will turn red */
+.dropdown-menu li a:hover {
+background-color: black !important;
+color: white!important;
+}
+
+#myCarousel .carousel-inner .item img:nth-child(1){display: block;}
+#myCarousel .carousel-inner .item img:nth-child(2){display: none;}
+
+.carousel-caption{
+    position: absolute;
+    left:30px;           
+    text-align: left;        
+}
+.item p {
+    position: absolute;
+    bottom: 250px;
+    font-size: 20px;
+}
+.item h2 {
+    position: absolute;
+    bottom: 160px;
+    font-size: 60px;
+    font-weight: bold;
+}
+.item .btn-box{
+    position: absolute;
+    bottom: 70px;
+    left: 40px;
+    border-radius: 0;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.item .btn{
+    padding: 15px 20px;
+    font-weight: bold;
+}
+
+#bestKia h3, #news h3{
+    font-size: 45px;
+    padding: 60px;
+    color: black;
+}
+#bestKia .box{
+    border:1px solid #dddddd;
+    border-radius: 10px;
+    padding: 15px;
+    line-height: 2.5;
+}
+
+#bestKia .tab-pane {
+    margin: 20px;
+}
+
+#bestKia .nav-tabs{
+    display: flex;
+    justify-content: center;
+}
+
+#bestKia .nav-tabs li a{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(121, 117, 117);
+    margin: 0px 12px;
+}
+#bestKia .nav-tabs li.active a{           
+    border-radius: 0;
+    border:none;
+    border-bottom: 3px solid black;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+#bestKia .box .col-sm-7,#bestKia .box .price{
+    text-align: right;
+}
+#bestKia h4 {
+    font-size: 23px;
+    font-weight: bold;
+}
+#bestKia h4+div {
+    font-size: 14px;
+    color: gray;
+}
+.badge {
+    position: absolute;
+    right: 50px;
+    background-color: black;
+    width: 70px;
+    height: 30px;
+    align-content: center;
+}
+.price{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.price span {
+    font-size: 18px;
+}
+#bestKia .box .col-sm-5{
+    font-weight: bold;
+    font-size: 15px;
+}
+#bestKia .box .btn{
+    border-radius: 0;
+}
+.btn-black{
+    background: black;
+    color:white;
+}
+.btn-black:hover{
+    background-color: rgb(130, 129, 129);
+    color:#dddddd
+}
+#bestKia .btn-box{
+    text-align: center;
+}
+.sort{
+    text-align: center;
+    padding:20px ;
+    color: gray;
+}
+#etc {
+    margin: 0px 30px;
+}
+#etc .box{
+    padding: 30px;
+    background-color: #f1f1f1c9;
+    transition: all 0.5s;
+}
+#etc .box img{
+    width: 35px; 
+}
+#etc .box h3{
+    font-size: 17px;
+    font-weight: bold;
+}
+.img-hover{display: none; transition: all 0.5s;}
+#etc .box:hover .img-hover{display: block;}
+#etc .box:hover .img{display: none;}
+
+#etc .box:hover{
+    background-color: black;
+    color: white;
+}
+.detail{text-align: right; color: black; padding-top: 80px;}
+
+#etc .box:hover .detail{color: white;}
+.detail i{color: black; transition: all 0.5s;}
+#etc .box:hover .detail i{opacity: 1; color: white;}
+
+
+#news .col-sm-6{
+    float: right;
+    height: 500px;
+}
+#news {margin: 0px 30px;}
+
+#news .col-sm-6:nth-child(2){
+    background-color: #697278;
+    color: white;
+    padding: 30px;
+    right: -15PX;
+}
+
+#news .col-sm-6:nth-child(1) img:nth-child(2){display: none;}
+
+#news .col-sm-6 h5{
+    font-weight: bold;
+    font-size: 18px;
+}
+#news .col-sm-6 h4{
+    font-weight: bold;
+    font-size: 21px;
+}
+#news .col-sm-6 .btn{
+    position: absolute;
+    bottom: 40px; 
+   font-weight: bold;
+   border-radius: 0;
+}
+#news .col-sm-4{
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+#news .col-sm-4 h4 {
+    font-weight: bold;
+    color:gray;
+}
+#news .col-sm-4 p {
+    font-weight: bold;
+    font-size: 18px;
+}
+#footer1 {background-color: #05141F;}
+#footer1 .col-sm-12 {
+    margin: 30px 0;    
+}
+#footer1 .col-sm-3:nth-child(1){
+    color: white;
+    line-height: 3;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+#footer1 .col-sm-3:nth-child(2){
+    padding-left: 150px ;
+    line-height: 2;
+    color: #66838B;
+}
+#footer1 .col-sm-6{
+    text-align: right;
+    padding-right: 40px;
+}
+#footer1 .col-sm-6 >ul {
+    margin-bottom: 230px;
+}
+#footer1 .col-sm-6 >ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+#footer1 .dropup{
+    color: white;
+    margin-left : 270px;
+    text-align: left;
+}
+#footer1 .btn{
+    background-color: #010E18;
+    border: none;
+    color: white;
+    width: 270px;
+    height: 50px;
+    text-align: left;
+    margin-left: 15px
+}
+#footer1 .dropdown-menu{
+    background-color: #010E18;
+}
+#footer1 .dropdown-menu a{
+    font-size: 16px;
+    text-align: left;
+    color: white!important;
+}
+#footer2 {
+    background-color: #010E18;
+    color: gray;
+    padding-top: 30px;
+}
+#footer2 .row .col-sm-7 li{
+    display: inline-block;  
+    padding-right: 30px;
+}
+#footer2 .row .col-sm-7{
+    float: right;
+}
+#footer2 .col-sm-7, #footer2 .col-sm-5 {
+    margin-bottom: 30px;
+}
+#footer2 .row .col-sm-2 {
+    font-size: 11px;
+    margin-bottom: 30px;
+}
+#footer2 .row .col-sm-2 li:nth-child(2){
+    margin-left: 30px;
+}
+#footer2 .row .col-sm-2 li:nth-child(3){
+    margin-left: 30px;
+}
+
+#collapse {display: none;}
+
+
+@media screen and (max-width: 767px){
+    #myCarousel .carousel-inner .item img:nth-child(1){display: none;}
+    #myCarousel .carousel-inner .item img:nth-child(2){display: block;}
+
+    #bestKia .col-sm-7{
+        top: -20px;
+    }
+    .navbar>div>ul{
+       display: none;
+    }
+
+    .navbar a img{
+        position: absolute;
+        width: 77px;
+        left: 10px;
+        top: 26px;
+    }
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+        background-color: transparent;
+    }
+
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: white;}
+    
+    .navbar-header .navicon{
+        display: inline;
+        position: absolute;
+        right:60px;
+        top: 33px; 
+    }
+    
+
+    #bestKia .box{
+        border:1px solid #dddddd;
+        border-radius: 10px;
+        padding: 20px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        
+    }
+    
+    #bestKia .tab-pane {
+        margin: 8px;
+    }
+    #bestKia .nav-tabs li a{
+        font-size: 13px;
+        font-weight: bold;
+        color: rgb(121, 117, 117);
+    }
+    #bestKia .nav-tabs li.active a{           
+        border-radius: 0;
+        border:none;
+        border-bottom: 3px solid black;
+        font-size: 14px;
+        font-weight: bold;
+        color: black;
+    }
+    #etc {
+        margin: 20px;
+    }
+    #etc .col-sm-3{
+        padding: 10px;
+    }
+
+    #news {width: 100%; margin: 0;}
+    #news .col-sm-6{
+        width: 100%;
+        padding: 0;
+    }
+    #news .col-sm-6:nth-child(2){
+        background-color: #697278;
+        color: white;
+        padding: 30px;
+        right:  0PX;
+        height: 200px;
+    }
+    #news .col-sm-4{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .item p {
+        position: absolute;
+        bottom: 250px;
+        font-size: 20px;
+    }
+    .item h2 {
+        position: absolute;
+        bottom: 160px;
+        font-size: 60px;
+        font-weight: bold;
+    }
+    .item .btn{
+        position: relative;
+        bottom: 0px;
+        margin-right: 10px;
+        padding: 15px 20px;
+        border-radius: 0;
+        font-weight: bold;
+    }
+    #footer1 .col-sm-6{display: none;}
+    #footer1 .col-sm-3:nth-child(2){display: none;}
+    
+    #collapse{display: block;}
+    
+    #collapse .collapsible {
+        display: inline;
+        background-color:#010E18 ;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        border-top: 0.1px solid gray ;
+        border-bottom: 0.1px solid gray ;
+    }
+
+    #collapse .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    }
+
+    #collapse .active:after {
+        content: "\2212";
+        }
+
+    #collapse .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    line-height: 3;
+    }
+    #footer2 .container .row:nth-of-type(3){display: none;}
+
+    #footer2 .row .col-sm-2 {
+        display: none;
+    }
+    #footer2 {
+        padding: 0;
+    }
+    #footer2 .row {
+        text-align: center;
+        margin-top: 30px;
+    }
+    #footer2 .row .col-sm-7{
+        font-size: 12px;
+    }
+}
