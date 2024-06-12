@@ -13,6 +13,17 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script>
+        $(function(){
+            $(window).scroll(function(e){
+                if($(window).scrollTop()>1756){
+                    $("#news .col-sm-4").addClass("animate__fadeInUp")
+                }
+            });
+        });
+    </script>
 </head>
 <body>
 <!-- navigation ---------------------------------------->
@@ -721,15 +732,15 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-4 animate__animated" >
                 <h4>뉴스</h4>
                 <p>기아, 제11회 스킬 월드컵 성료</p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 animate__animated">
                 <h4>뉴스</h4>
                 <p>기아, ‘더 기아 EV3’ 세계 최초 공개</p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 animate__animated">
                 <h4>공지</h4>
                 <p>개인정보 처리방침 변경 안내 (2024.05.31)</p>
             </div>
